@@ -17,6 +17,8 @@ gem "inherited_resources", "~> 1.3.0"
 gem 'jquery-rails'
 gem "uuid"
 gem "phony", "~> 1.6.4"
+gem "delayed_job"
+gem "delayed_job_mongo_mapper"
 
 # Gems used only for assets and not required
 # in production environments by default.
