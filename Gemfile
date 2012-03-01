@@ -16,6 +16,7 @@ gem "settingslogic", "~> 2.0.8"
 gem "inherited_resources", "~> 1.3.0"
 gem 'jquery-rails'
 gem "uuid"
+gem "phony", "~> 1.6.4"
 
 # Gems used only for assets and not required
 # in production environments by default.

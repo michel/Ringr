@@ -1,0 +1,12 @@
+= form_for @victim do |form|
+  %ul
+    %li.field
+      = form.label :name
+      = form.text_field :name, class: "field", placeholder: "Name of the scaredy cat"
+      .clear_fix
+
+    %li.field
+      = form.label :telephone_number, "Nr."
+      = form.text_field :telephone_number, class: "field", type: "tel", placeholder: "e.g. +31 612345678"
+
+  = form.submit "Troll!", class: "submit"
