@@ -1,4 +1,6 @@
 # Thanks to: https://github.com/github/gitignore
+*.mp3
+*.aiff
 *.rbc
 *.sassc
 .sass-cache

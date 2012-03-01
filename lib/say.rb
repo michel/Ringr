@@ -10,6 +10,10 @@ class Say
     convert_to_mp3
   end
 
+  def mp3_filename
+    "#{filename}.mp3"
+  end
+
   private
   def filename
     @filename ||= UUID.new.generate
@@ -17,10 +21,6 @@ class Say
 
   def aiff_filename
     "#{filename}.aiff"
-  end
-
-  def mp3_filename
-    "#{filename}.mp3"
   end
 
   def generate_aiff
