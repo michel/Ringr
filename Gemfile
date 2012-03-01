@@ -18,7 +18,8 @@ gem 'jquery-rails'
 gem "uuid"
 gem "phony", "~> 1.6.4"
 gem "delayed_job"
-gem "delayed_job_mongo_mapper"
+gem 'delayed_job_mongoid'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

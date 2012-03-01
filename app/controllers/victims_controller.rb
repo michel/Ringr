@@ -16,8 +16,7 @@ class VictimsController < ApplicationController
 
   def show
     @victim = Victim.where(guid: params[:id]).first
-    Delayed::Job.enqueue CallTask.new(@victim.guid)
-    logger.debug @victim.inspect
-    render "show", layout: false
+    @victim.call
+    render "show", layout: "empty"
   end
 end
