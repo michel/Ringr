@@ -2,8 +2,8 @@ require 'twilio-ruby'
 
 class Callr
   def initialize
-      account_sid = 'AC94571850a65e4706bb71b21cd9c6831a'
-      auth_token = '0cb6a2e4127d2cdca4c51fcad1dfd925'
+      account_sid = ''
+      auth_token = ''
      @client =   Twilio::REST::Client.new account_sid, auth_token
   end
   def call(number,name)
