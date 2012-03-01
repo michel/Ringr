@@ -1,0 +1,171 @@
+@import "variables";
+@import "compass/css3/";
+@import "compass/css3/border-radius";
+@import "compass/typography/lists";
+@import "compass/utilities/tables";
+
+ul.buttons {
+  @include no-bullets;
+  @include horizontal-list;
+}
+
+.tag {
+  @extend .button;
+  cursor: default !important;
+  margin-right: 10px !important;
+	&:active {
+	  top               : 0px !important;
+	}
+}
+
+.button, .button:visited {
+  @include single-box-shadow(rgba(0,0,0,0.5), 0px, 1px, 1px, 0px);
+  @include border-radius(5px);
+  margin          : 5px 0;
+  border          : 0;
+	background      : #222 url(/assets/button_overlay.png) repeat-x;
+	display         : inline-block;
+  padding         : 8px 14px 9px;
+	color           : #fff !important;
+	text-decoration : none;
+	text-shadow     : 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom   : 1px solid rgba(0,0,0,0.25);
+	position        : relative;
+	cursor          : pointer;
+  vertical-align  : text-bottom;
+  font-weight	    : bold;
+  font-size       : 14px;
+  font-family     : Arial, Helvetica;
+
+
+	&:hover, &.active{
+	  background-color  : #111;
+	  color             : #fff;
+	  text-decoration   : none;
+	}
+
+  &.active {
+    margin-bottom: 10px !important;
+  }
+	&:active {
+	  top               : 1px;
+	}
+	&:visited {
+    padding           : 8px 14px 9px;
+	}
+
+	&.small {
+    font-size       : 11px;
+    padding         : 3px 5px 4px;
+	}
+
+	&.tiny {
+    font-size       : 9px;
+    padding         : 2px 4px 3px;
+	}
+
+	&.green {
+	  background-color: #91bd09;
+	  &.disabled {
+	    background-color: #818e5a;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #749a02;
+	  }
+	}
+
+	&.blue {
+	  background-color: #2daebf;
+	  &.disabled {
+	    background-color: #578e95;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #007d9a;
+	  }
+	}
+
+	&.red {
+	  background-color: #e33100;
+	  &.disabled {
+	    background-color: #a56857;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #872300;
+	  }
+	}
+
+	&.magneta {
+	  background-color: #a9014b;
+	  &.disabled {
+	    background-color: #7a4c60;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #630030;
+	  }
+	}
+
+	&.orange {
+	  background-color: #ff5c00;
+	  &.disabled {
+	    background-color: #a57255;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #d45500;
+	  }
+	}
+
+	&.yellow {
+	  background-color: #ffb515;
+	  &.disabled {
+	    background-color: #c5aa6e;
+	  }
+
+	  &:hover, &.active{
+	    background-color: #fc9200;
+	  }
+	}
+
+  // Debug log tags
+  &.all {
+    @extend .magneta;
+  }
+  &.debug {
+    @extend .green;
+  }
+  &.info {
+    @extend .yellow;
+  }
+  &.warn {
+    @extend .orange;
+  }
+  &.error {
+    @extend .red;
+  }
+
+  // State tags
+  &.enabled {
+    @extend .green;
+  }
+  &.paused {
+    @extend .yellow;
+  }
+  &.disabled {
+    @extend .red;
+  }
+
+	&.go:after {
+	  content     : " »";
+	  float       : right;
+	  font-size   : 16px;
+	  &.small {
+	    font-size : 12px;
+	  }
+
+	}
+}
+
