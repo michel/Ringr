@@ -1,0 +1,201 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/*
+  Stylesheet for general styling elements.
+  Application specific styling is in application.scss.
+*/
+@import "compass/reset";
+@import "compass/css3/";
+@import "compass/css3/border-radius";
+@import "compass/typography/lists";
+@import "compass/utilities/tables";
+@import "variables";
+@import "buttons";
+
+
+/////
+// Basic styles concerning global HTML-elements
+/////
+body {
+  font-family:  verdana, arial, helvetica, sans-serif;
+  font-size:    12px;
+  color:        $text_color;
+  background: url(/assets/background.jpg) left top no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  h4 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .clear_fix {
+    clear: both;
+  }
+
+  #header, #body, #footer {
+    @include centered_element(5px);
+    clear: both;
+  }
+
+  a {
+    color: $link_color;
+    text-decoration: none;
+
+    &:hover, &:visited {
+      text-decoration: none;
+    }
+  }
+}
+
+/////
+// All general styles contained in the Header element
+/////
+#header {
+  border:         0;
+  border-bottom:  1px solid #ccc;
+
+  h1 {
+    float: left;
+  }
+
+  #logout {
+    @extend .button;
+    @extend .small;
+    @extend .red;
+    float: right;
+  }
+}
+
+/////
+// All general styles contained in the body element
+/////
+#body {
+  #notice, #alert {
+    padding:        .8em;
+    margin-bottom:  1em;
+    border:         2px solid #ddd;
+  }
+
+  #notice {
+    background:     #E8EFC2;
+    color:          #264409;
+    border-color:   #C6D880;
+
+    a {
+      color:        #264409;
+    }
+  }
+
+  #alert {
+    background:     #FBE3E4;
+    color:          #8a1f11;
+    border-color:   #FBC2C4;
+
+    a {
+      color:        #8a1f11;
+    }
+  }
+
+  table {
+    @include table-scaffolding;
+    width: 100%;
+
+    thead {
+      tr {
+        @include background-image(linear-gradient(color-stops($nav_gray_end, $nav_gray_start)));
+        border:                1px solid $nav_border;
+        border-top:            1px solid lighten($nav_border, 20%);
+        border-bottom:         1px solid darken($nav_border, 20%);
+        th{
+          padding:               7px 5px;
+        }
+      }
+    }
+
+    tr {
+      @include cycle_colors($even_row_color, $odd_row_color);
+
+      td, th {
+        vertical-align:   top;
+        padding:          5px;
+        text-align:       left;
+        line-height:      16px;
+
+        span.title {
+          display: block;
+        }
+        span.sub_title {
+          color: lighten($text_color, 40%);
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  background:     darken($even_row_color, 5%);
+  border:         1px solid #e5e5e5;
+  text-align:     center;
+  padding:        1em;
+  cursor:       default;
+  a, span {
+    padding: 0.2em 0.3em;
+  }
+  .disabled {
+    color: #aaaaaa;
+  }
+
+  .current {
+    @include border-radius(1em);
+    @include single-text-shadow(1px, 1px, 1px, rgba(255, 255, 255, 0.8));
+
+    font-style:         normal;
+    font-weight:        bold;
+    background-color:   darken($even_row_color, 15%);
+    display:            inline-block;
+    width:              1.4em;
+    height:             1.4em;
+    line-height:        1.5;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+/////
+// All general styles contained in the footer element
+/////
+#footer {
+  border:     0;
+  border-top: 1px solid #ccc;
+
+  .copyright {
+    float:    right;
+    display:  inline-block;
+    margin:   5px 0 0 0;
+  }
+}
