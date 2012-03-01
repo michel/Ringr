@@ -15,6 +15,7 @@ gem "bson_ext", "~> 1.5"
 gem "settingslogic", "~> 2.0.8"
 gem "inherited_resources", "~> 1.3.0"
 gem 'jquery-rails'
+gem "uuid"
 
 # Gems used only for assets and not required
 # in production environments by default.
