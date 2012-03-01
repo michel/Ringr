@@ -11,6 +11,10 @@ class Victim
     self.telephone_number = self.telephone_number.gsub(/[^\d]+/, "")
   end
 
+  def call
+    Callr.new.call(self.telephone_number, self.name)
+  end
+
   private
   def generate_mp3
     return unless self.filename.blank?
