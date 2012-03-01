@@ -10,7 +10,8 @@ class Callr
        @call = @client.account.calls.create(
           :from => '+442033222875',
           :to => number,
-          :url => "https://raw.github.com/gist/1952696/63acf75801f75851366c1f57be8a3ec5e58a2f7b/test.xml"
+          :url => "https://raw.github.com/gist/1952696/c612857033f5f385c53a9f77ad90f9fcaa41c331/test.xml"
+          #:url => "https://raw.github.com/gist/1952696/7adff17fcc4723463b2b297a4af2d99cd6823952/test.xml"
          )
   end
 end
