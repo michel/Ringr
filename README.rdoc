@@ -1,1 +1,10 @@
-Be afraid, be very afraid.
+This is @Bram__ , @rrooding , @gertgoet en @micheldegraaf's entry for Eindhoven.rb Hackathon,march 2012.
+
+In 3 hours we made a webapp that allows you to troll your fiends by entering the victims phone number and sending them a generated URL.
+When the opens the URL he/she will see a short creepy clip of the movie "The ring" and he will then recive a phone call that will notify him that he has "seven days" left to live.
+
+This app is build with:
+- Rails 3
+- MongoDB
+- Twillo (for VOIP)
+
