@@ -27,4 +27,3 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'ruby-debug19'
 end
-
