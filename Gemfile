@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem "draper", "~> 0.11.1"
 gem 'twitter-bootstrap-rails', '~> 2.0.1.0'
+gem 'flash_messages_helper'
+gem "uuid"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

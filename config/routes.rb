@@ -1,4 +1,7 @@
 Ringr::Application.routes.draw do
+  root :to => 'victims#new'
+
+  resources :victims
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
