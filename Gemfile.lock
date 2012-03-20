@@ -217,7 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson_ext
+  bson_ext (= 1.6.1)
   coffee-rails (~> 3.2.1)
   cucumber-rails
   database_cleaner

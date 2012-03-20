@@ -8,7 +8,7 @@ gem 'haml-rails'
 gem "draper", "~> 0.11.1"
 gem 'twitter-bootstrap-rails', '~> 2.0.1.0'
 gem 'mongoid'
-gem 'bson_ext'
+gem 'bson_ext','1.6.1'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
