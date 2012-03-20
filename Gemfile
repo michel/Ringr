@@ -26,3 +26,4 @@ group :test, :development do
   gem 'ruby-debug19'
 end
 
+gem 'twilio-ruby'
