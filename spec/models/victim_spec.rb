@@ -25,4 +25,19 @@ describe Victim do
       Factory.build(:victim, telephone_number: 123456789)
     end
   end
+
+  describe "GUID creation" do
+    let(:victim) { Factory.create :victim }
+
+    it "sets a GUID a create" do
+      victim.guid.should_not be_empty
+    end
+
+    it "only creates a GUID after creation not updating" do
+      guid   = victim.guid
+      victim.update_attributes!(name: "Whatever..")
+
+      victim.guid.should eql guid
+    end
+  end
 end

@@ -1,0 +1,5 @@
+= form_for [:facebook, @victim] do |form|
+  = form.text_field :name, placeholder: "Name"
+  = form.telephone_field :telephone_number, placeholder: "Telephone"
+
+  = form.submit "Troll!"
