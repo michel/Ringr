@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Rrrrr::Application.config.session_store :cookie_store, key: '_rrrrr_session'
+Ringr::Application.config.session_store :cookie_store, key: '_Ringr_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Rrrrr::Application.config.session_store :active_record_store
+# Ringr::Application.config.session_store :active_record_store
