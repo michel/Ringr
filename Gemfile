@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
-gem 'mongoid'
-gem 'bson_ext'
+gem 'bson_ext', '1.6.1'
+gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,6 +17,7 @@ gem "compass", "~> 0.11.7"
 gem 'twitter-bootstrap-rails'
 
 group :test, :development do
+  gem "faker"
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'factory_girl_rails'
