@@ -5,6 +5,10 @@ gem 'mongoid'
 gem 'bson_ext'
 gem 'twilio-ruby'
 gem 'heroku'
+gem 'jquery-rails'
+gem 'haml-rails'
+gem "draper", "~> 0.11.1"
+gem 'twitter-bootstrap-rails', '~> 2.0.1.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -12,10 +16,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'haml-rails'
-gem "draper", "~> 0.11.1"
-gem 'twitter-bootstrap-rails'
 
 group :test, :development do
   gem 'rspec-rails'

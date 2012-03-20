@@ -202,9 +202,9 @@ GEM
       builder (>= 2.1.2)
       jwt (>= 0.1.2)
       multi_json (>= 1.0.3)
-    twitter-bootstrap-rails (2.0.4)
+    twitter-bootstrap-rails (2.0.1.0)
       actionpack (>= 3.1)
-      less-rails (~> 2.1.8)
+      less-rails (~> 2.1.6)
       railties (>= 3.1)
     tzinfo (0.3.32)
     uglifier (1.2.3)
@@ -233,5 +233,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   shoulda (~> 2.11.3)
   twilio-ruby
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails (~> 2.0.1.0)
   uglifier (>= 1.0.3)
