@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.2'
 gem 'mongoid'
 gem 'bson_ext'
+gem 'twilio-ruby'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -25,4 +27,3 @@ group :test, :development do
   gem 'ruby-debug19'
 end
 
-gem 'twilio-ruby'
