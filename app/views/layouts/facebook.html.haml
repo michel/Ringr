@@ -36,11 +36,14 @@
               %li= link_to "Link 3", "/path3"
 
     .container
+      .row
+        .span12= flash_messages
 
       .content
         .row
           .span12
             = yield
+
       %footer
         %p &copy; Company 2012
     = javascript_include_tag "application"

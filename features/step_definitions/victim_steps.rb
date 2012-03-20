@@ -1,5 +1,5 @@
 Given /^I am on the new victim page$/ do
-  visit '/'
+  visit '/facebook/'
 end
 
 Given /^I fill in the form with Michels contact info$/ do
