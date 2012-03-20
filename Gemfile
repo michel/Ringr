@@ -13,7 +13,6 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem "draper", "~> 0.11.1"
-gem "compass", "~> 0.11.7"
 gem 'twitter-bootstrap-rails'
 
 group :test, :development do
