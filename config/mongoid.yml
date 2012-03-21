@@ -7,3 +7,5 @@ test:
   host: localhost
   database: ringr_test
 
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>
